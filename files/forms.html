@@ -1,39 +1,63 @@
 <!doctype html>
 <html lang="en">
 <head>
-
     <title>Forms practice</title>
+    <style>
+        body {
+            background-color: #00ffe1;
+
+        }
+
+        p {
+            background-color: yellow;
+            font-size: 20px;
+            font-family: "Comic Sans MS";
+
+        }
+
+
+
+    </style>
 </head>
 <body>
+<!--this is inline CSS, this is one of the way CSS information-->
+<!--we have internal CSS-->
 <form>
 
-<p>Username:
-    <input type="text" name = "username" placeholder="Type your username">
-</p>
-<!--password ==> hidden text-->
-    <p>Password:
-        <input type="password" name = "password" placeholder="Type your password">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci asperiores cupiditate dicta distinctio error,
+        excepturi fuga fugit impedit laudantium modi odit provident qui repellat soluta ullam velit vero vitae
+        voluptates.</p>
+<!--    if yoy give another CSS to another web element another attack,
+it is kind of overriding it-->
+
+
+    <p >Username:
+        <input type="text" name="username" placeholder="Type your username">
     </p>
-    <p>
+    <!--password ==> hidden text-->
+    <p>Password:
+        <input type="password" name="password" placeholder="Type your password">
+    </p>
+    <p >
         What did you think of this trip?
     </p>
-        <textarea  cols="30" rows="5" placeholder="Enter your comment"></textarea>
+    <textarea cols="30" rows="5" placeholder="Enter your comment"></textarea>
     <br>
     <p>Select your favorite food:</p>
     <input type="radio" name="food" value="burger">Burger
     <input type="radio" name="food" value="kabab" checked="checked">Kabab
     <input type="radio" name="food" value="salad" disabled>Salad
-<!--checked default option-->
-<!--disabled not selected-->
-<!--name should be the same-->
-<!--value is the different-->
+    <!--checked default option-->
+    <!--disabled not selected-->
+    <!--name should be the same-->
+    <!--value is the different-->
     <br>
     <p>Pick a date
-    <input type="date">
+        <input type="date">
     </p>
 
     <input type="datetime-local">
-    
+
     <p>Please upload you resume
         <input type="file">
     </p>
@@ -41,26 +65,26 @@
     <p>
         Please select your favorite course(s)
     </p>
-<p>
-    <label for="j">
-    <input type="checkbox" name="course" value="java" id="j">JAVA
-    </label>
-    <input type="checkbox" name="course" value="DS">DS
-    <input type="checkbox" name="course" value="UI">UI
-    <input type="checkbox" name="course" value="SOFTSKILL">Soft Skill
-</p>
-<!--drop box-->
+    <p >
+        <label for="j">
+            <input type="checkbox" name="course" value="java" id="j">JAVA
+        </label>
+        <input type="checkbox" name="course" value="DS">DS
+        <input type="checkbox" name="course" value="UI">UI
+        <input type="checkbox" name="course" value="SOFTSKILL">Soft Skill
+    </p>
+    <!--drop box-->
     <p>Please select the program:</p>
     <select name="course" id="">
-        <option value=""disabled selected>Select a program </option>
+        <option value="" disabled selected>Select a program</option>
         <option value="jd">Java Developer</option>
         <option value="sdet">Java SDET</option>
         <option value="cs">Cyber Security</option>
     </select>
 
     <input type="submit" value="Sign Up">
-<!--    sign up those information on the page and create Java class
-to accept those information enums classes and everything-->
+    <!--    sign up those information on the page and create Java class
+    to accept those information enums classes and everything-->
 
 </form>
 </body>
