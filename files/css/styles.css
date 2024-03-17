@@ -1,3 +1,12 @@
+/*selector ==> body,
+declaration part
+-{
+    background-color: #00ffe1;
+
+} */
+
+/*property and value*/
+
 body {
     background-color: #00ffe1;
 
